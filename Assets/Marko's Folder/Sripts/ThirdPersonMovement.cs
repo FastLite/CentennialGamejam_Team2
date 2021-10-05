@@ -25,7 +25,7 @@ public class ThirdPersonMovement : MonoBehaviour
     public float dbJumpMultiplier = 0.5f;
 
     public bool isGrounded;
-    public bool canDoubleJump = false;
+    public bool canDoubleJump;
 
     // Update is called once per frame
     void Update()
@@ -48,24 +48,22 @@ public class ThirdPersonMovement : MonoBehaviour
         
         velocity.y += gravity * Time.deltaTime;
 
-        if (isGrounded)
+        if (isGrounded || canDoubleJump)
         {
-            canDoubleJump = true;
-
-            if (Input.GetButtonDown("Jump"))
+            if (Input.GetButtonDown("Jump") && canDoubleJump == false)
             {
                 velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
+                canDoubleJump = true;
             }
-        }
-        else if (isGrounded = false && canDoubleJump) 
-        {
-            if (Input.GetButtonDown("Jump") && canDoubleJump)
+            else
             {
-                velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
-                canDoubleJump = false;
+                if (Input.GetButtonDown("Jump") && canDoubleJump == true)
+                {
+                    velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity) * dbJumpMultiplier;
+                    canDoubleJump = false;
+                }
             }
         }
-      
 
         controller.Move(velocity * Time.deltaTime);
 
