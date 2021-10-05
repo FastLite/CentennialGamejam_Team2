@@ -292,67 +292,67 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111117519}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.14443976, y: -0, z: -0, w: 0.98951364}
+  m_LocalPosition: {x: 9.78, y: 6.04, z: 1.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1313131299
+  m_LocalEulerAnglesHint: {x: 16.61, y: 0, z: 0}
+--- !u!1001 &1822284694323873229
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: b9a9c52ca756c2141bbff7914615162f, type: 3}
+    - target: {fileID: 1552448398664643519, guid: 40aace9d02003a047b1d531dffa6d119, type: 3}
+      propertyPath: m_Name
+      value: RoboPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2215972482781276421, guid: 40aace9d02003a047b1d531dffa6d119, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b9a9c52ca756c2141bbff7914615162f, type: 3}
+    - target: {fileID: 2215972482781276421, guid: 40aace9d02003a047b1d531dffa6d119, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.370813
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b9a9c52ca756c2141bbff7914615162f, type: 3}
+    - target: {fileID: 2215972482781276421, guid: 40aace9d02003a047b1d531dffa6d119, type: 3}
       propertyPath: m_LocalPosition.y
       value: 4.010789
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b9a9c52ca756c2141bbff7914615162f, type: 3}
+    - target: {fileID: 2215972482781276421, guid: 40aace9d02003a047b1d531dffa6d119, type: 3}
       propertyPath: m_LocalPosition.z
       value: 4.4525003
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b9a9c52ca756c2141bbff7914615162f, type: 3}
+    - target: {fileID: 2215972482781276421, guid: 40aace9d02003a047b1d531dffa6d119, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b9a9c52ca756c2141bbff7914615162f, type: 3}
+    - target: {fileID: 2215972482781276421, guid: 40aace9d02003a047b1d531dffa6d119, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b9a9c52ca756c2141bbff7914615162f, type: 3}
+    - target: {fileID: 2215972482781276421, guid: 40aace9d02003a047b1d531dffa6d119, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b9a9c52ca756c2141bbff7914615162f, type: 3}
+    - target: {fileID: 2215972482781276421, guid: 40aace9d02003a047b1d531dffa6d119, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b9a9c52ca756c2141bbff7914615162f, type: 3}
+    - target: {fileID: 2215972482781276421, guid: 40aace9d02003a047b1d531dffa6d119, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b9a9c52ca756c2141bbff7914615162f, type: 3}
+    - target: {fileID: 2215972482781276421, guid: 40aace9d02003a047b1d531dffa6d119, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b9a9c52ca756c2141bbff7914615162f, type: 3}
+    - target: {fileID: 2215972482781276421, guid: 40aace9d02003a047b1d531dffa6d119, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: b9a9c52ca756c2141bbff7914615162f, type: 3}
-      propertyPath: m_Name
-      value: RoboPlayer_Mesh
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9a9c52ca756c2141bbff7914615162f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 40aace9d02003a047b1d531dffa6d119, type: 3}
