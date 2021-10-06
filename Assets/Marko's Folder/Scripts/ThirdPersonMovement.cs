@@ -44,6 +44,7 @@ public class ThirdPersonMovement : MonoBehaviour
         if(isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
+            canDoubleJump = false;
         }
         
         velocity.y += gravity * Time.deltaTime;
