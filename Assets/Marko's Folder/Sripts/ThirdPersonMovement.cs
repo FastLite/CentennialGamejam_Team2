@@ -24,8 +24,8 @@ public class ThirdPersonMovement : MonoBehaviour
     public float jumpHeight = 3f;
     public float dbJumpMultiplier = 0.5f;
 
-    public bool isGrounded;
-    public bool canDoubleJump;
+    bool isGrounded;
+    bool canDoubleJump;
 
     // Update is called once per frame
     void Update()
