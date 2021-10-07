@@ -11,12 +11,12 @@ public class Indicator : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (indi.isPresent == false)
+            if (indi.isDimentionA == false)
             {
-                indi.isPresent = true; 
+                indi.isDimentionA = true; 
             } else
             {
-                indi.isPresent = false;
+                indi.isDimentionA = false;
             }
         }
     }

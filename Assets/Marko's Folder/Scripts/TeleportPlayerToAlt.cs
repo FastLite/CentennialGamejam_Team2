@@ -18,6 +18,7 @@ public class TeleportPlayerToAlt : MonoBehaviour
     public bool ePress = false;
     public bool atAlt = false;
 
+    public TimeIndicator indi;
 
     private void Start()
     {
@@ -45,6 +46,13 @@ public class TeleportPlayerToAlt : MonoBehaviour
             cam.SetActive(true);
             ePress = false;
             
+            if (!atAlt)
+            {
+                indi.isDimentionA = true;
+            } else
+            {
+                indi.isDimentionA = false;
+            }
         }
     }
 
