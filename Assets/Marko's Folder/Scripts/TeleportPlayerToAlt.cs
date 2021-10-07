@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TeleportPlayerToAlt : MonoBehaviour
 {
+    public GameObject cam;
     public Transform objectFromOG;
     public Transform objectFromAlt;
     public Vector3 whereToTP;
@@ -24,6 +25,7 @@ public class TeleportPlayerToAlt : MonoBehaviour
         if (Input.GetButtonDown("E"))
         {
             ePress = true;
+            cam.SetActive(false);
         }
     }
 
@@ -34,6 +36,7 @@ public class TeleportPlayerToAlt : MonoBehaviour
             transform.position = new Vector3(transform.position.x + (whereToTP.x * mod), transform.position.y + (whereToTP.y * mod), transform.position.z + (whereToTP.z * mod));            
             mod *= -1;
             atAlt = !atAlt;
+            cam.SetActive(true);
             ePress = false;
             
         }
