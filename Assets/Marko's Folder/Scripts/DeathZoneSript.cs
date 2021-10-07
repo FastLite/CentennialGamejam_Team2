@@ -11,6 +11,7 @@ public class DeathZoneSript : MonoBehaviour
         {
             Debug.Log("Player Respawned");
             other.GetComponent<RespawnPlayer>().RepawnPlayer();
+            other.GetComponent<TeleportPlayerToAlt>().playerDied();
         }
     }
 }

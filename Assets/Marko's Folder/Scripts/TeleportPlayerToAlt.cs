@@ -48,4 +48,9 @@ public class TeleportPlayerToAlt : MonoBehaviour
         }
     }
 
+    public void playerDied()
+    {
+        atAlt = false;
+    }
+
 }
