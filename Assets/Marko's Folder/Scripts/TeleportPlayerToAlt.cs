@@ -6,10 +6,13 @@ public class TeleportPlayerToAlt : MonoBehaviour
 {
     public Transform objectFromOG;
     public Transform objectFromAlt;
+    public Transform cam;
     public Vector3 whereToTP;
     public int mod = 1;
 
+    public bool ePress = false;
     public bool atAlt = false;
+
 
     private void Start()
     {
@@ -21,9 +24,19 @@ public class TeleportPlayerToAlt : MonoBehaviour
     {
         if (Input.GetButtonDown("E"))
         {
-                transform.position = new Vector3(transform.position.x + whereToTP.x, transform.position.y , transform.position.z + (whereToTP.z * mod));
-                mod *= -1;
-                atAlt = !atAlt;
+            ePress = true;
         }
     }
+
+    private void FixedUpdate()
+    {
+        if (ePress)
+        {
+            transform.position = new Vector3(transform.position.x + (whereToTP.x * mod), transform.position.y + (whereToTP.y * mod), transform.position.z + (whereToTP.z * mod));
+            mod *= -1;
+            atAlt = !atAlt;
+            ePress = false;
+        }
+    }
+
 }
