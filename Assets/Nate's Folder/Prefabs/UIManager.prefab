@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6433806306885973077}
   - component: {fileID: 6433806306885973075}
   - component: {fileID: 9031430351436408357}
+  - component: {fileID: 5869135999365963498}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -77,3 +78,16 @@ MonoBehaviour:
   areaA: {fileID: 0}
   areaB: {fileID: 0}
   isDimentionA: 1
+--- !u!114 &5869135999365963498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6433806306885973076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 597bc3c9000d546458596840abe73377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstMenuUI: {fileID: 0}
