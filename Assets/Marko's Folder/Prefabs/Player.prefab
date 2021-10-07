@@ -67,6 +67,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d01ee33d0bfd03a42ab0a27ab07d85b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 7560949540587917019}
+  jumpSound: {fileID: 8300000, guid: 7abf6dc37f9b0594b98e3180e520bbfb, type: 3}
+  jumpVolume: 1
   controller: {fileID: 4689590483226352378}
   cam: {fileID: 0}
   groundCheck: {fileID: 4689590483472616986}
@@ -103,6 +106,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a843458f3397ba640a59d99e6fb75a92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  teleportSource: {fileID: 7560949540587917019}
+  teleportSound: {fileID: 8300000, guid: c7197bb88ddbfc0468aee05f1909f066, type: 3}
+  teleportVolume: 1
   cam: {fileID: 0}
   objectFromOG: {fileID: 0}
   objectFromAlt: {fileID: 0}

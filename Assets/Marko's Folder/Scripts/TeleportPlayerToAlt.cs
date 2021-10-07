@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class TeleportPlayerToAlt : MonoBehaviour
 {
+    public AudioSource teleportSource;
+    public AudioClip teleportSound;
+    public float teleportVolume = 0.5f;
+    
+    
     public GameObject cam;
     public Transform objectFromOG;
     public Transform objectFromAlt;
@@ -26,6 +31,7 @@ public class TeleportPlayerToAlt : MonoBehaviour
         {
             ePress = true;
             cam.SetActive(false);
+            teleportSource.PlayOneShot(teleportSound, teleportVolume);
         }
     }
 

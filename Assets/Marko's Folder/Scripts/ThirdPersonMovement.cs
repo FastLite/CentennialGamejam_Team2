@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
+    public AudioSource audioSource;
+    public AudioClip jumpSound;
+    public float jumpVolume = 0.5f;
+    
     public CharacterController controller;
     public Transform cam;
     public Transform groundCheck;
@@ -100,6 +104,7 @@ public class ThirdPersonMovement : MonoBehaviour
             {
                 velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
                 canDoubleJump = true;
+                audioSource.PlayOneShot(jumpSound, jumpVolume);
             }
             else
             {
