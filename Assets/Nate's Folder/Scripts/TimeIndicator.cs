@@ -7,10 +7,13 @@ public class TimeIndicator : MonoBehaviour
 {
 
     // text that represents the Indicator text
-    public Text timeIndicatorText;
+    public Image indicator;
+
+    public Sprite areaA;
+    public Sprite areaB;
 
     // bool that determines if the time is in the present
-    public bool isPresent = true;
+    public bool isDimentionA = true;
 
     private void Update()
     {
@@ -20,12 +23,12 @@ public class TimeIndicator : MonoBehaviour
     // if it is the present change the Text variable to Present and if it is not change it to past
     void CheckPresent()
     {
-        if (isPresent == true)
+        if (isDimentionA == true)
         {
-            timeIndicatorText.text = "Present";
+            indicator.sprite = areaA;
         } else
         {
-            timeIndicatorText.text = "Past";
+            indicator.sprite = areaB;
         }
     }
 
