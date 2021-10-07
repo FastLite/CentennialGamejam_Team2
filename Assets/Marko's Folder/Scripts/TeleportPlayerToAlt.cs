@@ -50,7 +50,9 @@ public class TeleportPlayerToAlt : MonoBehaviour
 
     public void playerDied()
     {
+        cam.SetActive(false);
         atAlt = false;
+        mod = 1;
     }
 
 }
