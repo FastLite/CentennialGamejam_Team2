@@ -17829,7 +17829,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 704605346}
-  m_LocalRotation: {x: 0.005852364, y: 0.70708257, z: -0.005852364, w: 0.70708257}
+  m_LocalRotation: {x: 0.0058523626, y: 0.70708257, z: -0.0058523626, w: 0.70708257}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -23284,7 +23284,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 799591712}
   m_LocalRotation: {x: 0.03153324, y: 0.7064033, z: -0.031533234, w: 0.7064034}
-  m_LocalPosition: {x: 0, y: 0, z: 0.000000007450581}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 989338807}
@@ -24209,7 +24209,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: eeade527933936c40ba51bd04446ce8f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.01
+  m_Volume: 0.147
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -46930,9 +46930,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1892455492062799472, guid: 6e24f42c2e71e1c46a234e8e1cfc8103, type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892455492062799472, guid: 6e24f42c2e71e1c46a234e8e1cfc8103, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: eeade527933936c40ba51bd04446ce8f, type: 3}
+      objectReference: {fileID: 8300000, guid: 7abf6dc37f9b0594b98e3180e520bbfb, type: 3}
     - target: {fileID: 3727427984400118352, guid: 6e24f42c2e71e1c46a234e8e1cfc8103, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -47006,6 +47010,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1333544533}
     - target: {fileID: 8263746541439758453, guid: 6e24f42c2e71e1c46a234e8e1cfc8103, type: 3}
+      propertyPath: teleportSource
+      value: 
+      objectReference: {fileID: 1421238764}
+    - target: {fileID: 8263746541439758453, guid: 6e24f42c2e71e1c46a234e8e1cfc8103, type: 3}
       propertyPath: teleportVolume
       value: 1
       objectReference: {fileID: 0}
@@ -47014,6 +47022,11 @@ PrefabInstance:
 --- !u!1 &1421238762 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3727427984400118358, guid: 6e24f42c2e71e1c46a234e8e1cfc8103, type: 3}
+  m_PrefabInstance: {fileID: 1421238761}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1421238764 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1892455492062799472, guid: 6e24f42c2e71e1c46a234e8e1cfc8103, type: 3}
   m_PrefabInstance: {fileID: 1421238761}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1447963045
