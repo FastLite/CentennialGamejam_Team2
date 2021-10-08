@@ -11320,6 +11320,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6433806306885973077, guid: fe398b7ed62584740810d022f3585a1c, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 266771405}
+    - target: {fileID: 6433806306885973077, guid: fe398b7ed62584740810d022f3585a1c, type: 3}
+      propertyPath: thirdPersonCam
+      value: 
+      objectReference: {fileID: 1062174760}
     - target: {fileID: 9031430351436408357, guid: fe398b7ed62584740810d022f3585a1c, type: 3}
       propertyPath: areaA
       value: 
@@ -21143,6 +21151,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 303863290}
+    - target: {fileID: 7982655825512443470, guid: af4ff59ae4ecc0c47923c2229c382137, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7982655825823204892, guid: af4ff59ae4ecc0c47923c2229c382137, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
