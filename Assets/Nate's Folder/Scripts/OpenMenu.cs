@@ -29,7 +29,10 @@ public class OpenMenu : MonoBehaviour
             else
             {
                 inMenu = false;
+                
             }
+
+            gameObject.GetComponent<MenuUI>().isPlayerInMenu(inMenu);
         }
     }
 
@@ -58,7 +61,11 @@ public class OpenMenu : MonoBehaviour
 
     public void DisableMenu(Canvas DisabledUI)
     {
+        player.GetComponent<ThirdPersonMovement>().enabled = true;
+        player.GetComponent<TeleportPlayerToAlt>().enabled = true;
+        thirdPersonCam.SetActive(true);
         inMenu = false;
+        gameObject.GetComponent<MenuUI>().isPlayerInMenu(inMenu);
         DisabledUI.gameObject.SetActive(false);
     }
 

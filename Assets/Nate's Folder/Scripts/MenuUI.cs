@@ -8,6 +8,7 @@ public class MenuUI : MonoBehaviour
 {
     public GameObject player;
     public GameObject thirdPersonCam;
+    public bool inMenu;
 
     public void ChangeSceen(string SceneName)
     {
@@ -26,7 +27,7 @@ public class MenuUI : MonoBehaviour
 
     public void ActiveMenu(Canvas ActiveUI)
     {
-        if (player == null && thirdPersonCam == null)
+        if (inMenu || player == null && thirdPersonCam == null)
         {
             ActiveUI.gameObject.SetActive(true);
         }
@@ -37,5 +38,10 @@ public class MenuUI : MonoBehaviour
             thirdPersonCam.SetActive(true);
             ActiveUI.gameObject.SetActive(true);
         }
+    }
+
+    public void isPlayerInMenu(bool isInMenu)
+    {
+        inMenu = isInMenu;
     }
 }
