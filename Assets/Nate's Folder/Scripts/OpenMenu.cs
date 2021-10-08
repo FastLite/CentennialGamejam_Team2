@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class OpenMenu : MonoBehaviour
 {
-
+    public GameObject player;
+    public GameObject thirdPersonCam;
     public Canvas firstMenuUI;
     public Canvas mainUI;
     public Canvas controls;
@@ -20,7 +21,7 @@ public class OpenMenu : MonoBehaviour
         { 
             escPress = true;
             MenuOpener();
-
+            
             if (!inMenu)
             {
                 inMenu = true;
@@ -39,12 +40,18 @@ public class OpenMenu : MonoBehaviour
             firstMenuUI.gameObject.SetActive(true);
             mainUI.gameObject.SetActive(false);
             controls.gameObject.SetActive(false);
+            player.GetComponent<ThirdPersonMovement>().enabled = false;
+            player.GetComponent<TeleportPlayerToAlt>().enabled = false;
+            thirdPersonCam.SetActive(false);
         }
         else if (escPress && inMenu)
         {
             firstMenuUI.gameObject.SetActive(false);
             mainUI.gameObject.SetActive(true);
             controls.gameObject.SetActive(false);
+            player.GetComponent<ThirdPersonMovement>().enabled = true;
+            player.GetComponent<TeleportPlayerToAlt>().enabled = true;
+            thirdPersonCam.SetActive(true);
         }
         escPress = false;
     }
