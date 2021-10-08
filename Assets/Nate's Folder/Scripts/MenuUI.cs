@@ -26,9 +26,16 @@ public class MenuUI : MonoBehaviour
 
     public void ActiveMenu(Canvas ActiveUI)
     {
-        player.GetComponent<ThirdPersonMovement>().enabled = true;
-        player.GetComponent<TeleportPlayerToAlt>().enabled = true;
-        thirdPersonCam.SetActive(true);
-        ActiveUI.gameObject.SetActive(true);
+        if (player == null && thirdPersonCam == null)
+        {
+            ActiveUI.gameObject.SetActive(true);
+        }
+        else
+        {
+            player.GetComponent<ThirdPersonMovement>().enabled = true;
+            player.GetComponent<TeleportPlayerToAlt>().enabled = true;
+            thirdPersonCam.SetActive(true);
+            ActiveUI.gameObject.SetActive(true);
+        }
     }
 }
