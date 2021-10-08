@@ -1127,7 +1127,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2570478354565019176, guid: e1d564e9abd79a34bb670be1078a33aa, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.6928479
+      value: 0.69284785
       objectReference: {fileID: 0}
     - target: {fileID: 2570478354565019176, guid: e1d564e9abd79a34bb670be1078a33aa, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1139,7 +1139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2570478354565019176, guid: e1d564e9abd79a34bb670be1078a33aa, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.1412864
+      value: -0.14128643
       objectReference: {fileID: 0}
     - target: {fileID: 5646397674568823121, guid: e1d564e9abd79a34bb670be1078a33aa, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2625,6 +2625,11 @@ PrefabInstance:
       objectReference: {fileID: 1089292378}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e24f42c2e71e1c46a234e8e1cfc8103, type: 3}
+--- !u!1 &266771405 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3727427984400118358, guid: 6e24f42c2e71e1c46a234e8e1cfc8103, type: 3}
+  m_PrefabInstance: {fileID: 266771404}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &295725312
 GameObject:
   m_ObjectHideFlags: 0
@@ -11240,6 +11245,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 303863290}
     - target: {fileID: 5869135999365963498, guid: fe398b7ed62584740810d022f3585a1c, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 266771405}
+    - target: {fileID: 5869135999365963498, guid: fe398b7ed62584740810d022f3585a1c, type: 3}
       propertyPath: controls
       value: 
       objectReference: {fileID: 1408847687}
@@ -11247,6 +11256,10 @@ PrefabInstance:
       propertyPath: firstMenuUI
       value: 
       objectReference: {fileID: 341365910}
+    - target: {fileID: 5869135999365963498, guid: fe398b7ed62584740810d022f3585a1c, type: 3}
+      propertyPath: thirdPersonCam
+      value: 
+      objectReference: {fileID: 1062174760}
     - target: {fileID: 6433806306885973074, guid: fe398b7ed62584740810d022f3585a1c, type: 3}
       propertyPath: m_RootOrder
       value: 5
