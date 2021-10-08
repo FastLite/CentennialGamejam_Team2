@@ -17820,7 +17820,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 704605346}
-  m_LocalRotation: {x: 0.0058523626, y: 0.70708257, z: -0.0058523626, w: 0.70708257}
+  m_LocalRotation: {x: 0.005852364, y: 0.70708257, z: -0.005852364, w: 0.70708257}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -23282,7 +23282,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 799591712}
   m_LocalRotation: {x: 0.03153324, y: 0.7064033, z: -0.031533234, w: 0.7064034}
-  m_LocalPosition: {x: 0, y: 0, z: 0.000000007450581}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 989338807}
@@ -24386,6 +24386,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 204753942}
     - target: {fileID: 5869135999365963498, guid: fe398b7ed62584740810d022f3585a1c, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1421238762}
+    - target: {fileID: 5869135999365963498, guid: fe398b7ed62584740810d022f3585a1c, type: 3}
       propertyPath: controls
       value: 
       objectReference: {fileID: 2032778564}
@@ -24393,6 +24397,10 @@ PrefabInstance:
       propertyPath: firstMenuUI
       value: 
       objectReference: {fileID: 923334640}
+    - target: {fileID: 5869135999365963498, guid: fe398b7ed62584740810d022f3585a1c, type: 3}
+      propertyPath: thirdPersonCam
+      value: 
+      objectReference: {fileID: 1726282743}
     - target: {fileID: 6433806306885973074, guid: fe398b7ed62584740810d022f3585a1c, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -24453,6 +24461,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6433806306885973077, guid: fe398b7ed62584740810d022f3585a1c, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1421238762}
+    - target: {fileID: 6433806306885973077, guid: fe398b7ed62584740810d022f3585a1c, type: 3}
+      propertyPath: thirdPersonCam
+      value: 
+      objectReference: {fileID: 1726282743}
     - target: {fileID: 9031430351436408357, guid: fe398b7ed62584740810d022f3585a1c, type: 3}
       propertyPath: areaA
       value: 
@@ -46985,6 +47001,11 @@ PrefabInstance:
       objectReference: {fileID: 1333544533}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e24f42c2e71e1c46a234e8e1cfc8103, type: 3}
+--- !u!1 &1421238762 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3727427984400118358, guid: 6e24f42c2e71e1c46a234e8e1cfc8103, type: 3}
+  m_PrefabInstance: {fileID: 1421238761}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1447963045
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class MenuUI : MonoBehaviour
 {
+    public GameObject player;
+    public GameObject thirdPersonCam;
 
     public void ChangeSceen(string SceneName)
     {
@@ -24,6 +26,9 @@ public class MenuUI : MonoBehaviour
 
     public void ActiveMenu(Canvas ActiveUI)
     {
+        player.GetComponent<ThirdPersonMovement>().enabled = true;
+        player.GetComponent<TeleportPlayerToAlt>().enabled = true;
+        thirdPersonCam.SetActive(true);
         ActiveUI.gameObject.SetActive(true);
     }
 }
