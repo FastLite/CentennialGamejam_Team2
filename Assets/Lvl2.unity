@@ -23284,7 +23284,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 799591712}
   m_LocalRotation: {x: 0.03153324, y: 0.7064033, z: -0.031533234, w: 0.7064034}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.000000007450581}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 989338807}
@@ -46985,6 +46985,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 1063849028}
+    - target: {fileID: 3727427984400118355, guid: 6e24f42c2e71e1c46a234e8e1cfc8103, type: 3}
+      propertyPath: jumpVolume
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3727427984400118358, guid: 6e24f42c2e71e1c46a234e8e1cfc8103, type: 3}
       propertyPath: m_Name
       value: PlayerWithAnimation
@@ -47015,7 +47019,7 @@ PrefabInstance:
       objectReference: {fileID: 1421238764}
     - target: {fileID: 8263746541439758453, guid: 6e24f42c2e71e1c46a234e8e1cfc8103, type: 3}
       propertyPath: teleportVolume
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e24f42c2e71e1c46a234e8e1cfc8103, type: 3}

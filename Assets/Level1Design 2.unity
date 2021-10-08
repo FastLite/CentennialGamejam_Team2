@@ -1131,7 +1131,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2570478354565019176, guid: e1d564e9abd79a34bb670be1078a33aa, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.14128642
+      value: 0.14128643
       objectReference: {fileID: 0}
     - target: {fileID: 2570478354565019176, guid: e1d564e9abd79a34bb670be1078a33aa, type: 3}
       propertyPath: m_LocalRotation.y
@@ -1139,7 +1139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2570478354565019176, guid: e1d564e9abd79a34bb670be1078a33aa, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.14128639
+      value: -0.1412864
       objectReference: {fileID: 0}
     - target: {fileID: 5646397674568823121, guid: e1d564e9abd79a34bb670be1078a33aa, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2599,6 +2599,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 1524267111}
+    - target: {fileID: 3727427984400118355, guid: 6e24f42c2e71e1c46a234e8e1cfc8103, type: 3}
+      propertyPath: jumpVolume
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3727427984400118358, guid: 6e24f42c2e71e1c46a234e8e1cfc8103, type: 3}
       propertyPath: m_Name
       value: Player (1)
@@ -2623,6 +2627,10 @@ PrefabInstance:
       propertyPath: teleportSource
       value: 
       objectReference: {fileID: 1089292378}
+    - target: {fileID: 8263746541439758453, guid: 6e24f42c2e71e1c46a234e8e1cfc8103, type: 3}
+      propertyPath: teleportVolume
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e24f42c2e71e1c46a234e8e1cfc8103, type: 3}
 --- !u!1 &266771405 stripped
